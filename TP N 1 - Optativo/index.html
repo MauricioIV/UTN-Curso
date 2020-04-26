@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--/*
 Seguro No Pagamos Cooperativa es una compañía de seguros que lleva 2 años en el mercado.
 Hasta el momento trabajan con los esquemas tradicionales de venta, es decir contacto telefónico o
@@ -51,4 +52,59 @@ Premium: $1500
         <p id="prueba"></p>
     </body>
     </html>
+=======
+<!--/*
+Seguro No Pagamos Cooperativa es una compañía de seguros que lleva 2 años en el mercado.
+Hasta el momento trabajan con los esquemas tradicionales de venta, es decir contacto telefónico o
+a través de sus asesores con los potenciales clientes.
+El directorio de la compañía se reunió con el departamento de sistemas para solicitarle un desarrollo de
+un sitio web. El objetivo es que los futuros clientes puedan solicitar un contacto a través de la web para
+que un asesor se contacte con ellos.
+Vos como parte del equipo de desarrollo debes realizar el maquetado HTML de este sitio web, dándole estilos
+al mismo con la utilización de CSS
+
+Los datos que se deben solicitar son los siguientes:
+
+Nombre
+Apellido
+DNI
+Email
+Teléfono
+Tipo de seguro
+Básico
+Intermedio
+Premium
+ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostrar el pantalla el valor
+ de cada uno:
+
+Basico: $500
+Intermedio: $1000
+Premium: $1500
+*/ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Trabajo Practcio Unidad Nº1</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <script type="text/javascript" src="java.js"></script>
+    </head>
+    <body>
+        <h1>Seguro No Pagamos Cooperativa</h1>
+        <label for="fnombre">Nombre:</label> <br> <input type="text" id="fnombre" name="fnombre"> <br>
+        <label for="fapellido">Apellido:</label> <br> <input type="text" id="fapellido" name="fapellido"> <br>
+        <label for="fdni">DNI:</label> <br> <input type="text" id="fdni" name="fdni"> <br>
+        <label for="femail">Email:</label> <br> <input type="text" id="femail" name="femail"> <br>
+        <label for="ftelefono">Telefono:</label> <br> <input type="text" id="ftelefono" name="ftelefono"> <br>
+ 
+        <label for="ftiposeguro">Tipo de Seguro:</label> <br>
+        <select id="ftiposeguro" onChange="informarPrecio(this);">
+            <option disabled selected value> -- Seleccionar Opciòn -- </option>
+            <option value="500">Básico</option>
+            <option value="1000">Intermedio</option>
+            <option value="1500">Premium</option>
+        </select>
+        <p id="prueba"></p>
+    </body>
+    </html>
+>>>>>>> 4110dde4b03e68d76326bdb6ada0b9ee78854c35
     
