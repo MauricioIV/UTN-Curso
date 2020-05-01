@@ -1,0 +1,37 @@
+<!--/*
+Desarrollador una calculadora que tenga:
+
+2 campos inputs para los operadnos
+4 botones de operadores básicos (suma, resta, multiplicación, división)
+Al realizar la cuenta se deberá actualizar el campo resultado
+-->
+<html>
+    <head>
+        <title> Trabajo Practcio Unidad Nº1</title>
+        <link rel="stylesheet" type="text/css" href="estilo/style.css">
+        <script type="text/javascript" src="java.js"></script>
+    </head>
+    <body>
+        <form action="" name="form_calculadora" onsubmit="contacto(); return false;">
+            <div class="contenedor_elemento">
+                <label for="Operador1">Operador 1</label>
+                <input type="text" name="Operador1">
+            </div>
+            <div class="contenedor_elemento">
+                <label for="Operador2">Operador 2</label>
+                <input type="text" name="Operador2">
+            </div>
+            <!-- Aca van los botones-->
+            <div class="contenedor_botones">
+                <button type="button" name="suma">+</button> 
+                <button type="button" name="resta">-</button>
+                <button type="button" name="multiplicacion">*</button>
+                <button type="button" name="division">/</button>
+            </div>
+
+            <div class="contenedor_elemento">
+                <label for="Resultado">Resultado</label>
+                <input type="text" name="resultado">
+            </div>
+    </body>
+</html>
