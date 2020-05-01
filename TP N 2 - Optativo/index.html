@@ -12,26 +12,23 @@ Al realizar la cuenta se deberá actualizar el campo resultado
         <script type="text/javascript" src="java.js"></script>
     </head>
     <body>
-        <form action="" name="form_calculadora" onsubmit="contacto(); return false;">
+        <form action="" name="form_calculadora">
             <div class="contenedor_elemento">
                 <label for="Operador1">Operador 1</label>
-                <input type="text" name="Operador1">
+                <input type="text" name="Operador1" id="op1">
             </div>
             <div class="contenedor_elemento">
                 <label for="Operador2">Operador 2</label>
-                <input type="text" name="Operador2">
+                <input type="text" name="Operador2" id="op2">
             </div>
             <!-- Aca van los botones-->
             <div class="contenedor_botones">
-                <button type="button" name="suma">+</button> 
-                <button type="button" name="resta">-</button>
-                <button type="button" name="multiplicacion">*</button>
-                <button type="button" name="division">/</button>
+                <button type="button" name="suma" onClick="sumar();">+</button> 
+                <button type="button" name="resta" onClick="restar();">-</button>
+                <button type="button" name="multiplicacion" onClick="multiplicar();">*</button>
+                <button type="button" name="division" onClick="dividir();">/</button>
             </div>
 
-            <div class="contenedor_elemento">
-                <label for="Resultado">Resultado</label>
-                <input type="text" name="resultado">
-            </div>
+            <p id="prueba"></p>
     </body>
 </html>
